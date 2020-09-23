@@ -1,0 +1,41 @@
+# Configurations
+# title:            Anki使用助手
+# longtitle:        Anki各种技巧合集
+author:           Terrychan
+email:            napoler2008@gmail.com
+description: >
+  Anki各种技巧合集
+
+version:          1.0
+gitbook_version:  3.2.3
+
+url:              'https://www.terrychan.org'
+# baseurl:          '/anki'
+rss:              RSS
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:        /:categories/:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jemoji

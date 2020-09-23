@@ -1,0 +1,60 @@
+
+
+
+<div class="body-inner">
+    <div class="book-header" role="navigation">
+        <!-- Title -->
+        <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            {% if page.title %}
+                <a href="." >{{ page.title | escape }}</a>
+            {% else %}
+                <a href="." >{{ site.title | escape }}</a>
+            {% endif %}
+        </h1>
+    </div>
+    <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+            <div id="book-search-results">
+                <div class="search-noresults">
+                    <section class="normal markdown-section">
+                        
+
+                        {% if page.title %}
+                            <h1 id="{{ page.id }}">{{ page.title | escape }}</h1>
+                        {% else %}
+                            <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
+                        {% endif %}
+
+
+
+                        {{ content }}
+                        
+                        <div id="lv-container" data-id="city" data-uid="MTAyMC80OTg1OS8yNjM1MA==">
+                            <script type="4097e126b712b9dab1f8fc00-text/javascript">
+                                 (function(d, s) {
+                                     var j, e = d.getElementsByTagName(s)[0];
+                              
+                                     if (typeof LivereTower === 'function') { return; }
+                              
+                                     j = d.createElement(s);
+                                     j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                     j.async = true;
+                              
+                                     e.parentNode.insertBefore(j, e);
+                                 })(document, 'script');
+                              </script>
+                            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+                    </section>
+                </div>
+                <a href="{{site.github.repository_url}}/edit/master/docs/{{page.path}}" class="ui label"><i class="edit icon"></i> 编辑 </a>
+                <a href="https://www.terrychan.org/editor.md/examples/terry.html" class="ui label"><i class="edit icon"></i> markdown编辑器 </a>
+                <p>By <a href="https://www.terrychan.org/" target="blank" >
+                    Terry Chan
+                    </a>
+
+                 <!-- {%- include search.html -%} -->
+            </div>
+        </div>
+    </div>
+</div>
